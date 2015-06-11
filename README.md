@@ -1,4 +1,7 @@
 # show-hide-nav-js
+
+[Demo](http://jokedewinter.github.io/show-hide-nav-js/)
+
 Show / Hide a menu using only pure JavaScript, no jQuery. Because sometimes there is no need to load the whole of jQuery just for a menu like that.
 
 I can't claim all the credit for this, found help here: [jsFiddle](http://jsfiddle.net/fyUJc/31/).
