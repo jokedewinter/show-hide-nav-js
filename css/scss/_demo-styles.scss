@@ -1,0 +1,101 @@
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * Header
+ * -------------------------------------------------------------------------------------------------
+ */
+
+#demo-header {
+	margin-bottom: 1em;
+	padding: 1em 0;
+	background: $col-text; 
+	color: $col-page;
+	
+	h1 {
+		text-align: center;
+		padding-bottom: 1em;
+	}
+	
+	@media screen and ( min-width: 600px ) { h1 { text-align: left; } }
+}
+
+
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * Navigation
+ * -------------------------------------------------------------------------------------------------
+ */
+
+/* The .js or .no-js dance of show and hide */
+@media screen and ( max-width: 599px ) {
+	
+	.no-js {
+		.show_menu_btn { display: none; }
+		#nav ul { display: block; }
+	}
+	
+	.js {
+		.show_menu_btn { display: block; }
+		#nav ul { display: none; }
+	}
+}
+
+@media screen and ( min-width: 600px ) {
+
+	.show_menu_btn { display: none; }
+	#nav ul { display: block; }
+}
+
+/* The show menu button */
+.show_menu_btn {
+	width: 35%;
+	margin: 0 auto;
+	padding: 0.3em;
+	cursor: pointer;
+	text-align: center;
+	background: #88b47f;
+}
+
+
+/* The menu itself */
+#nav {
+	ul {
+		margin: 1em 0;
+	
+		li { padding: 0.5em; }
+		li:hover { background: #88b47f; }
+		
+		a {
+			display: block;
+			font-size: 1em;
+			color: #eee;
+			border-bottom: none;
+		}		
+	}
+}
+
+@media screen and ( max-width: 599px ) { 
+
+	#nav ul { 
+		display: block;
+		
+		li {
+			display: block;
+			text-align: center;
+			border-bottom: 1px solid lighten($col-text, 10%);
+		}		
+	} 
+}
+
+
+@media screen and ( min-width: 600px ) {
+
+	#nav {
+		overflow: hidden;		
+		
+		ul li {
+			width: 7em;
+			float: left;
+			margin-right: 1em;
+		}
+	}
+}

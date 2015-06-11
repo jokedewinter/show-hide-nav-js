@@ -1,0 +1,33 @@
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * Layout
+ * -------------------------------------------------------------------------------------------------
+ */
+
+* { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+	-webkit-text-size-adjust: auto; 
+}
+
+body { 
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
+	font-weight: 400;
+	text-align: center; 
+	line-height: 1.5; 
+	background: $col-page-alt;	
+	color: $col-text;
+}
+
+.wrapper {
+	width: 90%;
+	max-width: 50em;
+	margin: 0 auto;
+	text-align: left;
+	overflow: hidden;
+}
+
+#main { background: $col-page; }
+#demo-notes { padding: 3em 0; }

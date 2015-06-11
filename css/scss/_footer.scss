@@ -1,0 +1,45 @@
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * #colophon
+ * -------------------------------------------------------------------------------------------------
+ */
+
+#colophon { background: $col-page-alt;	}
+
+.project-links {
+	display: block;
+	margin: 1em 0;
+	padding-bottom: 1em;
+	border-bottom: 1px solid $col-border;
+
+	ul { 
+		list-style: none;
+		margin: 0;
+		text-align: center;	
+	}
+	
+	a {
+		font-size: 0.875em;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-right: 2em;
+		border-bottom: none;
+		
+		&:hover { color: $col-brand-accent; }
+	}
+}
+
+@media screen and ( max-width: 599px ) { .project-links li { line-height: 2; } }
+
+@media screen and ( min-width: 600px ) {
+
+	.project-links {	
+		ul { display: block; }
+	
+		li {	
+			display: inline;
+			line-height: 2.5;		
+		}
+	}
+}
+
